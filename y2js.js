@@ -1,6 +1,6 @@
 function y(x,y=null){
-	if(y=="son"){
-		document.getElementsByClassName(x);
+	if(y=="k"){
+		return document.getElementsByClassName(x);
 	}else{
 		if(x.indexOf(" ")==-1){
 			if(y!==null){
