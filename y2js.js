@@ -9,7 +9,7 @@ function y(x,y=""){
 		if(y!==""){
 			return document.getElementsByClassName(x)[y];
 		}else{
-			return document.getElementsByClassName(x)[0];
+			return document.getElementsByClassName(x);
 		}
 	}
 }
