@@ -1,7 +1,4 @@
 function y(x,y=""){
-	if(y=="s"){
-		return document.getElementsByClassName(x)[document.getElementsByClassName(x).length -1];
-	}else{
 	if(x.indexOf(" ")==-1){
 		if(y!==""){
 			return document.querySelectorAll(x)[y];
@@ -14,6 +11,5 @@ function y(x,y=""){
 		}else{
 			return document.getElementsByClassName(x);
 		}
-	}
 	}
 }
