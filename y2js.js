@@ -1,5 +1,5 @@
 function y(x,y=""){
-	if(y==?){
+	if(y=="?"){
 		if(x.indexOf(" ")==-1){
 		if(y!==""){
 			return document.body.contains(document.querySelectorAll(x)[y]);
