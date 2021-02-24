@@ -1,4 +1,11 @@
 function y(x,y=""){
+	if(y=="s"){
+		if(x.indexOf(" ")==-1){
+			return document.querySelectorAll(x)[document.querySelectorAll(x).length -1];
+		}else{
+			return document.getElementsByClassName(x)[document.getElementsByClassName(x).length -1];
+		}
+	}else{
 	if(x.indexOf(" ")==-1){
 		if(y!==""){
 			return document.querySelectorAll(x)[y];
@@ -11,5 +18,6 @@ function y(x,y=""){
 		}else{
 			return document.getElementsByClassName(x);
 		}
+	}
 	}
 }
