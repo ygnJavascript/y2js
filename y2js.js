@@ -13,7 +13,3 @@ function y(x,y=null){
 		}
 	}
 }
-
-function k(x){
-	return document.getElementsByClassName(x);
-}
