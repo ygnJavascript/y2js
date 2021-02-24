@@ -2,7 +2,7 @@ function y(x,y=""){
 	if(x.indexOf(" ")==-1){
 		if(y!==""){
 			if(y=="s"){
-				return document.querySelectorAll(x)[document.querySelectorAll(x).length - 1];
+				return document.querySelectorAll(x);
 			}else{
 				return document.querySelectorAll(x)[y];
 			}
@@ -12,7 +12,7 @@ function y(x,y=""){
 	}else{
 		if(y!==""){
 			if(y=="s"){
-				return document.getElementsByClassName(x)[document.getElementsByClassName(x).length - 1];
+				return document.getElementsByClassName(x);
 			}else{
 				return document.getElementsByClassName(x)[y];
 			}
