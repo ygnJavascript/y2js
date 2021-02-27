@@ -1,11 +1,14 @@
-function y(x,y="boş"){
-	if(x.indexOf(" ")==-1){
-    	if(y=="boş"){
-        	return document.querySelectorAll(x);
-        }else{
-        	return document.querySelectorAll(x)[y];
-        }
-    }else{
-    	return document.getElementsByClassName(x);
-    }
+		if(y!==null){
+			return document.querySelectorAll(x)[y];
+		}else{
+			return document.querySelector(x)[0];
+			return document.querySelector(x);
+		}
+	}else{
+		if(y!==null){
+			return document.getElementsByClassName(x)[y];
+		}else{
+			return document.getElementsByClassName(x)[0];
+		}
+	}
 }
